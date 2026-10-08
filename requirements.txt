@@ -1,0 +1,22 @@
+# --- core (required) ---
+numpy
+pandas
+scikit-learn
+matplotlib
+gradio
+fastapi
+uvicorn
+httpx
+
+# --- preferred ML (import-guarded; app works without them) ---
+xgboost
+shap
+
+# --- deep learning (import-guarded; enables LSTM/GRU/CNN/Transformer + DenseNet121) ---
+torch
+torchvision
+
+# --- optional upgrades (import-guarded) ---
+faiss-cpu        # faster RAG retrieval; TF-IDF+cosine is the default
+langgraph        # agent orchestration; built-in state machine is the tested path
+transformers     # biomedical NER second opinion; rule-based NLP is the default
